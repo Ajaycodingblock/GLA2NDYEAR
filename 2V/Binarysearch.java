@@ -7,6 +7,7 @@ public class Binarysearch {
         while (low <= high) {
             int mid = low + (high - low) / 2;
 
+            
             if (arr[mid] == t) {
                 return mid;
             } else if (arr[mid] < t) { 

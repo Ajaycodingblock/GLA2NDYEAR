@@ -3,21 +3,24 @@ public class selectionsort {
 public static void selctsort(int [] arr)
 {
     int n = arr.length;
-    for(int i = 0; i<n-1;i++)
-    {
-        int mx =i ;
-        for(int j = i;j<n;j++)
+    for(int i=0; i<n-1; i++)
+    {  
+        int mx=i;
+        for(int j=i;j<n;j++)
         {
-if(arr[i]>arr[j])
-{
-    mx = j;
-}
+            if(arr[mx]>arr[j])
+            {
+         int temp = arr[i];
+         arr[i]=arr[mx];
+         arr[mx]=temp;
+            }
+
+
         }
-        int temp = arr[i];
-        arr[i] = arr[mx];
-        arr[mx] =  temp;
+         int temp = arr[i];
+         arr[i]=arr[mx];
+         arr[mx]=temp;
     }
-    
 }
 
 
