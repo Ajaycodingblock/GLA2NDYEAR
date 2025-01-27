@@ -1,4 +1,4 @@
-public class Binartsort {
+public class Binarysort {
 
 public static int binarysrch(int [] arr ,int target )
 {
