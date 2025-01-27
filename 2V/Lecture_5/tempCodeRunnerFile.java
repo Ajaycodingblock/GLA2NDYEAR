@@ -1,4 +1,8 @@
-public class Insertion_Sort {
+
+
+
+
+class Insertion_Sort {
 
   public static void InsertionSort(int nums[]) {
     int size = nums.length;
@@ -12,7 +16,7 @@ public class Insertion_Sort {
       
       while (j >= 0 && key < nums[j]) {
         nums[j + 1] = nums[j];
-        j = j-1;
+        --j;
       }
 
       // Place key at after the element just smaller than it.
@@ -20,13 +24,11 @@ public class Insertion_Sort {
     }
   }
 
-    public static void main(String args[]) {
-    int[] nums = { 2,0,1};
+  // Driver code
+  public static void main(String args[]) {
+    int[] nums = { 1,7,4,3,8,5 };
    InsertionSort(nums);
     System.out.println("Sorted Array in Ascending Order: ");
-    for(int itr : nums){
-        System.out.print(itr+" ");
-    }
     
   }
 }
