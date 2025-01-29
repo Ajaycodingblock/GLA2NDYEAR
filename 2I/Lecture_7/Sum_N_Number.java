@@ -4,7 +4,8 @@ public class Sum_N_Number {
     public static int Sum(int n) {
         if (n == 0) {
             return 0;  // Base case
-        } else {
+        } 
+        else {
             return  n+ Sum(n - 1);  // Recursive case
         }
     }
