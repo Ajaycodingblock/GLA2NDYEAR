@@ -3,13 +3,13 @@
     public ListNode next;
 
     public ListNode(int x, ListNode add) {
-        val = x;
-        next = add;
+        this.val = x;
+        this.next = add;
     }
 
     public ListNode(int x) {
-        val = x;
-        next = null;
+        this.val = x;
+        this.next = null;
     }
 }
 
@@ -26,7 +26,9 @@ public class LLOpertaion {
         ListNode newNode = new ListNode(data);
         ListNode ptr = head;
         while (ptr.next != null)
+        {
             ptr = ptr.next;
+        }
         ptr.next = newNode;
         return head;
     }
@@ -50,7 +52,9 @@ public class LLOpertaion {
     public static ListNode deleteAtEnd(ListNode head) {
         ListNode ptr = head;
         while (ptr.next.next != null)
+        {
             ptr = ptr.next;
+        }
         ptr.next = null;
         return head;
     }
